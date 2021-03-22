@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Practica 1 - Cryptography</title>
+</head>
+<body>
+    <h1>Cifrado Vigenére</h1>
+    <main>
+        <section class="encrypt_container">
+            <h2>Cifrar</h2>
+            <div class="encrypt_form">
+                <label for="encrypt_alphabet">Ingresa el alfabeto</label>
+                <input type="text" id="encrypt_alphabet" name="encrypt_alphabet" placeholder="a,b,c,d,...">
+                <label for="encrypt_key">Ingresa la clave <span>En caso de no tener una, dejar en blanco</span></label>
+                <input type="text" id="encrypt_key" name="encrypt_key" placeholder="thisismykey">
+                <button class="btn" id="encrypt_button">Ingresar el texto plano</button>
+            </div>
+        </section>
+        <hr>
+        <section class="decrypt_container">
+            <h2>Descifrar</h2>
+            <div class="decrypt_form">
+                <label for="decrypt_alphabet">Ingresa el alfabeto</label>
+                <input type="text" id="decrypt_alphabet" name="decrypt_alphabet" placeholder="a,b,c,d,...">
+                <label for="decrypt_key">Ingresa la clave</label>
+                <input type="text" id="decrypt_key" name="decrypt_key" placeholder="thisismykey">
+                <button class="btn" id="decrypt_button">Ingresar el texto cifrado</button>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

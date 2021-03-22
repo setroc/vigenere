@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 62.5%;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+hr {
+    margin: 20px 0;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+input:focus {
+    border: 1px solid #c4c4c4;
+    outline: none;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+label > span {
+    font-size: 1.5rem;
+}
+button {
+    width: 100%;
+    padding: 8px 0;
+    background: #c4c4c4;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+button:hover {
+    cursor: pointer;
+}
+button:focus {
+    border: 1px solid black;
+    outline: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    border: 1px solid black;
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.encrypt_container,
+.decrypt_container {
+    display: flex;
+    flex-direction: column;
+}
+.encrypt_form,
+.decrypt_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
